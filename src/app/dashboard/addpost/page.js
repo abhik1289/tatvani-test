@@ -1,6 +1,6 @@
-import Sidebar from '../../components/Essentials/Sidebar';
-import Header from '../../components/Essentials/Header';
-import AddPost from '../../components/AdminPage/addPost';
+import Sidebar from '@/components/Essentials/Sidebar';
+import Header from '@/components/Essentials/Header'; 
+import AddPost from '@/components/AdminPage/addPost'; 
 
 const AddPostPage = () => {
   return (

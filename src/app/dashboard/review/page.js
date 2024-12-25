@@ -1,6 +1,6 @@
-import ReviewPost from '../../components/AdminPage/reviewPost';
-import Sidebar from '../../components/Essentials/Sidebar';
-import Header from '../../components/Essentials/Header';
+import ReviewPost from '@/components/AdminPage/reviewPost';
+import Sidebar from '@/components/Essentials/Sidebar';
+import Header from '@/components/Essentials/Header';
 
 const ReviewPostPage = () => {
   return (

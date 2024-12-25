@@ -5,21 +5,21 @@ import HomeSlider from "@/components/HomePage/HomeSlider";
 import LatestNews from "@/components/HomePage/LatestNews";
 import FeaturedPoem from "@/components/HomePage/LatestPoem";
 import FeaturedStories from "@/components/HomePage/LatestStories";
-// import TestimonialSection from "../components/HomePage/TestimonialSection";
+import TestimonialSection from "../components/HomePage/TestimonialSection";
 export default function Home() {
   return (
-    <div>
-      <HomeSlider/>
-<FeaturesSection/>
-<AboutSection/>
-<LatestNews/>
+    <>
+      <HomeSlider />
+      <FeaturesSection />
+      <AboutSection />
+      <LatestNews />
 
-<FeaturedPoem/>
-<FeaturedStories/>
-<AdvertisementSection/>
+      <FeaturedPoem />
+      <FeaturedStories />
+      <AdvertisementSection />
 
-{/* <TestimonialSection/> */}
+      {/* <TestimonialSection /> */}
 
-    </div>
+    </>
   )
 }

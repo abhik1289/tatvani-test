@@ -1,4 +1,5 @@
-import  { useState, useEffect } from "react";
+"use client";
+import  { useState } from "react";
 
 // Dummy data 
 const submissions = [
@@ -31,10 +32,10 @@ const submissions = [
 const ReviewPost = () => {
   const [posts, setPosts] = useState([]);
 
-  useEffect(() => {
-    //  fetch submissions 
-    setPosts(submissions);
-  }, []);
+  // useEffect(() => {
+  //   //  fetch submissions 
+  //   setPosts(submissions);
+  // }, []);
 
   return (
     <div className="p-10 text-white">
