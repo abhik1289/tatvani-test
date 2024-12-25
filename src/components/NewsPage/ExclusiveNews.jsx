@@ -1,6 +1,3 @@
-
-
-
 const ExclusiveNews = () => {
   const newsItems = [
     {
@@ -9,7 +6,7 @@ const ExclusiveNews = () => {
         "The study of more than 15,000 people found that physical fitness is linked with a lower likelihood of developing both conditions.",
       category: "Fitness",
       date: "29/08/2023",
-      image: "https://via.placeholder.com/150", 
+      image: "https://via.placeholder.com/150",
     },
     {
       title: "DeBrusk Hopes to Re-sign with Bruins, Eyes 30-Goal Mark This Season",
@@ -17,7 +14,7 @@ const ExclusiveNews = () => {
         "A year away from hitting unrestricted free agency next summer, Boston Bruins winger Jake DeBrusk said Tuesday he is hoping to sign an extension to stay.",
       category: "Hockey",
       date: "29/08/2023",
-      image: "https://via.placeholder.com/150", 
+      image: "https://via.placeholder.com/150",
     },
     {
       title: "Canada Men's Soccer Training Session Scrapped Amid Compensation Talks",
@@ -25,16 +22,9 @@ const ExclusiveNews = () => {
         "A planned training session for Canada's men's soccer team was scrapped Friday amid ongoing discussions about player compensation.",
       category: "Football",
       date: "29/08/2023",
-      image: "https://via.placeholder.com/150", 
+      image: "https://via.placeholder.com/150",
     },
   ];
-
-  const featuredNews = {
-    title: "Dubois Seeks ‘Justice’ After Low Blow Call in Loss to Usyk",
-    category: "Boxing",
-    date: "29/08/2023",
-    image: "https://via.placeholder.com/300", 
-  };
 
   return (
     <div className="bg-gray-100 py-12">
@@ -70,16 +60,16 @@ const ExclusiveNews = () => {
           <div className="lg:col-span-1">
             <div className="p-4 bg-white shadow-md rounded-lg transition duration-300 hover:shadow-lg">
               <img
-                src={featuredNews.image}
-                alt={featuredNews.title}
+                src={newsItems[0].image}
+                alt={newsItems[0].title}
                 className="w-full h-64 rounded-lg object-cover mb-4"
               />
               <h3 className="text-2xl font-semibold mb-2 text-gray-900 hover:text-gray-600 transition duration-300">
-                {featuredNews.title}
+                {newsItems[0].title}
               </h3>
               <div className="text-sm text-gray-500 flex items-center gap-4 mb-2">
-              <span className='bg-gray-300 p-0.5 px-1.5 rounded-md text-black font-normal'>{featuredNews.category}</span>
-                <span>{featuredNews.date}</span>
+              <span className='bg-gray-300 p-0.5 px-1.5 rounded-md text-black font-normal'>{newsItems[0].category}</span>
+                <span>{newsItems[0].date}</span>
               </div>
 
             </div>
