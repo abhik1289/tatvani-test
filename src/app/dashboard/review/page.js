@@ -2,13 +2,15 @@ import ReviewPost from '@/components/AdminPage/reviewPost';
 import Sidebar from '@/components/Essentials/Sidebar';
 import Header from '@/components/Essentials/Header';
 
+export const dynamic = 'force-dynamic'; // Disable static optimization
+
 const ReviewPostPage = () => {
   return (
     <div className="admin-dashboard flex">
       <Sidebar />
-      <div className="flex-1 p-8 bg-gray-800 pt-16  pl-64">
+      <div className="flex-1 p-8 bg-gray-800 pt-16 pl-64">
         <Header />
-        <ReviewPost/>
+        <ReviewPost />
       </div>
     </div>
   );
