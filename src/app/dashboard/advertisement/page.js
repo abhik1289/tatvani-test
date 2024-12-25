@@ -1,6 +1,6 @@
-import Sidebar from '../../components/Essentials/Sidebar';
-import Header from '../../components/Essentials/Header';
-import AddAdvertise from '../../components/AdminPage/addAdvertise';
+import Sidebar from '@/components/Essentials/Sidebar';
+import Header from '@/components/Essentials/Header';
+import AddAdvertise from '@/components/AdminPage/addAdvertise';
 
 const AddAdvertisePage = () => {
   return (

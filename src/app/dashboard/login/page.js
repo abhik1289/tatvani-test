@@ -1,22 +1,24 @@
+"use client";
 import { useState } from 'react';
-import { useAuth } from '../../auth/loginAuth';
-import { useNavigate } from 'react-router-dom';
+
+import { useRouter } from 'next/navigation';
 
 const Login = () => {
   // default email and password
   const [email, setEmail] = useState('admin@tatvani.com'); // Default email
   const [password, setPassword] = useState('tatvani'); // Default password
-  const { login } = useAuth();
-  const navigate = useNavigate();
+  // const { login } = useAuth();
+  // const navigate = useNavigate();
+  const navigate = useRouter();
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     
-    // Authentication logic
-    if (email && password) {
-      login(); 
-      navigate('/admin/dashboard'); 
-    }
+    // // Authentication logic
+    // if (email && password) {
+    //   // login(); 
+    //   navigate.push('/admin/dashboard'); 
+    // }
   };
 
   return (
