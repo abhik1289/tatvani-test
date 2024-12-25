@@ -9,6 +9,16 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-const eslintConfig = [...compat.extends("next/core-web-vitals")];
+const eslintConfig = {
+  extends: [...compat.extends("next/core-web-vitals")],
+  parserOptions: {
+    ecmaVersion: 2020,
+    sourceType: "module",
+  },
+  rules: {
+    "semi": ["error", "always"],
+    "quotes": ["error", "single"],
+  },
+};
 
 export default eslintConfig;
