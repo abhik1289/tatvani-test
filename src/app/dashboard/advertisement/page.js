@@ -2,11 +2,13 @@ import Sidebar from '@/components/Essentials/Sidebar';
 import Header from '@/components/Essentials/Header';
 import AddAdvertise from '@/components/AdminPage/addAdvertise';
 
+export const dynamic = 'force-dynamic'; // Prevent static generation issues
+
 const AddAdvertisePage = () => {
   return (
     <div className="admin-dashboard flex">
       <Sidebar />
-      <div className="flex-1 p-8 bg-gray-800 pt-16  pl-64">
+      <div className="flex-1 p-8 bg-gray-800 pt-16 pl-64">
         <Header />
         <AddAdvertise />
       </div>
